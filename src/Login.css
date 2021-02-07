@@ -1,0 +1,84 @@
+.login {
+  height: 100vh;
+  background-color: #e9ebee;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.login__continer {
+  border-radius: 20px;
+  width: 500px;
+  height: 350px;
+  box-shadow: 0px 5px 8px 9px rgba(224, 224, 224, 0.75);
+  margin-top: 150px;
+  padding: 20px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (max-width:660px){
+  .login__continer{
+    width: 400px;
+  }
+}
+
+.login__continer > form > center > input {
+  align-items: center;
+  width: 350px;
+  height: 40px;
+  margin-top: 20px;
+  font-weight: 400;
+  padding: 10px;
+  font-size: 1rem;
+  color: #111;
+  outline-color: #518ee4;
+}
+.login__continer > form > center > button {
+  color: #fff;
+  align-items: center;
+  width: 350px;
+  height: 40px;
+  margin-top: 20px;
+  font-weight: bold;
+  padding: 10px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  background-color: #2e81f4;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.login__continer > form > center > button:hover {
+  transition: 1s ease;
+}
+.login__continer > center > p {
+  margin-top: 20px;
+  color: #2e81f4;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.login__continer > center > hr {
+  width: 350px;
+  margin-top: 20px;
+}
+.Register {
+  height: 40px;
+  width: 200px;
+  margin-top: 20px;
+  background-color: #42b728;
+  border: none;
+  color: #fff;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.login > center > h4 {
+  margin-top: 50px;
+  width: 350px;
+  font-size: larger;
+  font-weight: 700;
+}

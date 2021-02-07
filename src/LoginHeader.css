@@ -1,0 +1,39 @@
+.header {
+  display: flex;
+  align-items: center;
+  height: 103px;
+  overflow: hidden;
+  background-color: #2e81f4;
+  padding-top: 8px;
+  position: sticky;
+  z-index: 100;
+  top: 0;
+}
+.image {
+  height: 73px;
+  object-fit: contain;
+  margin: 10px;
+  margin-left: 50px;
+  border-radius: 10px;
+  width: 200px;
+}
+
+.registerBtn {
+  height: 40px;
+  width: 200px;
+  margin-left: 38px;
+  color: #fff;
+  background-color: #42b728;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 660px) {
+  .header {
+    flex-direction: column;
+    height: 175px;
+  }
+  
+}
