@@ -1,27 +1,36 @@
-import "./App.css";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import LoginHeader from "./LoginHeader";
-import Register from "./Register";
-import Login from "./Login";
-import Home from "./Home";
-function App() {
+import React from "react";
+import Nav from "./Nav";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Redirect,
+} from "react-router-dom";
+import About from "../src/components/About";
+import Project from "../src/components/Project";
+import Resume from "../src/components/Resume";
+const App = () => {
   return (
-    <div className="app">
-      <Router>
+    <Router>
+      <div className="app">
+        <Nav />
         <Switch>
-          <Home path="/Home" />
-          <Route path="/login">
-            <LoginHeader />
-            <Login />
+          <Route exact path="/">
+            <About />
           </Route>
-
-          <Route path="/register">
-            <Register />
+          <Route path="/project">
+            <Project />
           </Route>
+          <Route path="/resume">
+            <Resume />
+          </Route>
+          <Router>
+            <Redirect to="/" />
+          </Router>
         </Switch>
-      </Router>
-    </div>
+      </div>
+    </Router>
   );
-}
+};
 
 export default App;
